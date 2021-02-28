@@ -1,5 +1,5 @@
 <template>
-  <div class="home uk-container" style="margin-top: 30px">
+  <div class="home uk-container" style="margin-top: 30px; height: 100vh">
     <div class="uk-grid">
       <div class="uk-width-1-6">
         <ul class="uk-nav uk-nav-default" style="font-size: 20px">

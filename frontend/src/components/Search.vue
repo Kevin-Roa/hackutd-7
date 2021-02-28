@@ -1,5 +1,6 @@
 <template>
-  <div style="margin-top: 30px">
+  <div>
+    <h2 class="uk-text-center">Find a Server</h2>
     <input
       type="text"
       class="uk-width-4-5 uk-align-center uk-input uk-border-rounded"

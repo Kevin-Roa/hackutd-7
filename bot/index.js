@@ -1,6 +1,7 @@
 const Discord = require('discord.js');
 const loadCommands = require('./helper/loadCommands');
 const { prefix, token } = require('./config.json');
+const { setupRoles } = require('./helper/setupRoles');
 
 const client = new Discord.Client();
 loadCommands(client);
@@ -12,6 +13,8 @@ client.once('ready', () => {
 client.on('message', (msg) => {
 	// Ignore any messages that dont start with prefix or are from bot
 	if (!msg.content.startsWith(prefix) || msg.author.bot) return;
+
+	if (msg.content === '!setuproles') setupRoles(msg.guild);
 
 	const args = msg.content.slice(prefix.length).trim().split(/ +/);
 	const cmd = args.shift().toLowerCase();

@@ -25,7 +25,8 @@ module.exports = {
 					if (result.length > 1) {
 						// Remove the servers that are not as close to the search
 						// The closer the score is to 0, the closer the result
-						result = result.filter((server) => server.score <= 0.3);
+						console.log(result);
+						result = result.filter((server) => server.score <= 0.2);
 					}
 
 					// If results != null

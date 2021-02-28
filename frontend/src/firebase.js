@@ -1,5 +1,5 @@
-import Firebase from 'firebase';
-import { ref, onMounted } from 'vue';
+import Firebase from 'firebase/app';
+import 'firebase/firestore';
 import { firebaseConfig } from './config.json';
 
 const firebase = Firebase.initializeApp(firebaseConfig);

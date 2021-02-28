@@ -20,7 +20,7 @@ const routes: Array<RouteRecordRaw> = [
 				component: News
 			},
 			{
-				path: 'find/:search',
+				path: 'find',
 				name: 'Search',
 				component: Search
 			}
